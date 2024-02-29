@@ -19,7 +19,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         buildConfigField("String", "BASE_URL", "\"https://api.github.com/\"")
-        buildConfigField("String", "KEY", "\"YOUR_API_KEY\"")
+        buildConfigField("String", "API_TOKEN", "\"YOUR_API_KEY\"")
 
 
     }
@@ -60,7 +60,7 @@ dependencies {
 
     // Glide - Picasso
     implementation("com.github.bumptech.glide:glide:4.16.0")
-    ksp("com.github.bumptech.glide:compiler:4.11.0")
+//    ksp("com.github.bumptech.glide:compiler:4.11.0")
 
     // Viewpager2
     implementation("androidx.viewpager2:viewpager2:1.0.0")
