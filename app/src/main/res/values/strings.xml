@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">GitHub</string>
+    <string name="welcome">Welcome</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="search">Search</string>
+    <string name="count">0</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="no_followers">No followers</string>
+
+
+    <string name="tab_label_for_followers_and_following">Tab label for followers and following</string>
+    <string name="logo_image_item_user">Logo image item user</string>
+    <string name="logo_image_detail_user">Logo image detail user</string>
+    <string name="logo_image_user_followers">Logo image user followers</string>
+    <string name="logo_image_user_following">Logo image user following</string>
+
+
 </resources>

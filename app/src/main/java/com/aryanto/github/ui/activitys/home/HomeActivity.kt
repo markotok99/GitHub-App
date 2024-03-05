@@ -1,13 +1,11 @@
-package com.aryanto.github.ui.home
+package com.aryanto.github.ui.activitys.home
 
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.aryanto.github.databinding.ActivityHomeBinding
 import com.aryanto.github.utils.MyStatement
-import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class HomeActivity : AppCompatActivity() {
@@ -20,15 +18,20 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        if (savedInstanceState == null) {
+            homeVM.getUsers()
+        }
+
         setAdapter()
         setViewModel()
+
     }
 
     private fun setAdapter() {
         binding.apply {
             homeAdapter = HomeAdapter(listOf())
-            homeRecyclerView.layoutManager = LinearLayoutManager(this@HomeActivity)
             homeRecyclerView.adapter = homeAdapter
+            homeRecyclerView.layoutManager = LinearLayoutManager(this@HomeActivity)
         }
     }
 
@@ -38,8 +41,7 @@ class HomeActivity : AppCompatActivity() {
                 when (result) {
                     is MyStatement.Success -> {
                         homeProgressBar.visibility = View.GONE
-                        result.data.let { homeAdapter.updateListItem(it) }
-
+                        homeAdapter.updateListItem(result.data)
                     }
 
                     is MyStatement.Error -> {
@@ -50,10 +52,6 @@ class HomeActivity : AppCompatActivity() {
                         homeProgressBar.visibility = View.VISIBLE
                     }
                 }
-            }
-
-            lifecycleScope.launch {
-                homeVM.getUsers()
             }
 
         }

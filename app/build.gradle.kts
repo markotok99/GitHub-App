@@ -19,7 +19,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         buildConfigField("String", "BASE_URL", "\"https://api.github.com/\"")
-        buildConfigField("String", "API_TOKEN", "\"YOUR_API_KEY\"")
+        buildConfigField("String", "KEY", "\"YOUR_API_KEY\"")
 
 
     }
@@ -69,8 +69,8 @@ dependencies {
     implementation("io.insert-koin:koin-android:3.4.0")
 
     // Coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+//    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+//    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
     // ViewModel dan LiveData
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
