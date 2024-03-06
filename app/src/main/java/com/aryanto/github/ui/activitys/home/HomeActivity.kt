@@ -2,6 +2,7 @@ package com.aryanto.github.ui.activitys.home
 
 import android.os.Bundle
 import android.view.View
+import android.view.inputmethod.EditorInfo
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.aryanto.github.databinding.ActivityHomeBinding
@@ -24,6 +25,7 @@ class HomeActivity : AppCompatActivity() {
 
         setAdapter()
         setViewModel()
+        setSearchComponent()
 
     }
 
@@ -54,6 +56,30 @@ class HomeActivity : AppCompatActivity() {
                 }
             }
 
+        }
+    }
+
+    private fun setSearchComponent() {
+        binding.apply {
+            materialSearchView.setupWithSearchBar(materialSearchBar)
+            materialSearchView.editText.setOnEditorActionListener { textView, actionId, _ ->
+                if (actionId == EditorInfo.IME_ACTION_SEARCH){
+                    val searchText = textView.text.toString()
+                    handleSearch(searchText)
+                    materialSearchView.hide()
+                    true
+                }else{
+                    false
+                }
+            }
+        }
+    }
+
+    private fun handleSearch(query: String) {
+        query.let {
+            binding.apply {
+                homeVM.searchUser(query)
+            }
         }
     }
 
