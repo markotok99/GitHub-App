@@ -36,6 +36,6 @@ Project ini menggunakan bahasa Kotlin.
 <br>
 **Perlu diingat bahwa repository ini dapat digunakan sebagai bahan referensi sehingga diharapkan tidak asal copy paste code**.
 <br>
-jika Anda terbukti melakukan plagiat dari proyek ini maka saya tidak bertanggung jawab atas apa pun yang terjadi jika Anda suspended / ditangguhkan oleh <a href="https://www.dicoding.com">Dicoding</a>.
+jika Anda terbukti melakukan plagiat dari proyek ini maka saya tidak bertanggung jawab atas apa pun yang terjadi jika Anda disuspended / ditangguhkan oleh <a href="https://www.dicoding.com">Dicoding</a>.
 
 Salam sukses dan semoga bermanfaat.
