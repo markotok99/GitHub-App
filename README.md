@@ -24,11 +24,18 @@ Course :
 
 Jika Anda ingin berkontribusi, silakan fork repositori ini dan lakukan perubahan sesuai keinginan. 
 Pull requests disambut dengan hangat.
-jangan lupa di star agar saya semangat untuk mengaupdate kode terbaru.
+
+## Cara support saya ?
+> Hanya Follow Github dan **star** repo ini
+
+<a href="https://github.com/markotok99" target="blank">![GitHub followers](https://img.shields.io/github/followers/markotok99?style=social)</a>
 
 ## Note :
 
 Project ini menggunakan bahasa Kotlin. 
+<br>
 **Perlu diingat bahwa repository ini dapat digunakan sebagai bahan referensi sehingga diharapkan tidak asal copy paste code**.
+<br>
+jika Anda terbukti melakukan plagiat dari proyek ini maka saya tidak bertanggung jawab atas apa pun yang terjadi jika Anda suspended / ditangguhkan oleh <a href="https://www.dicoding.com">Dicoding</a>.
 
 Salam sukses dan semoga bermanfaat.
