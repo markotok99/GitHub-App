@@ -79,9 +79,13 @@ class DetailActivity : AppCompatActivity() {
 
             TabLayoutMediator(tabLayout, viewPager) { tab, position ->
                 when (position) {
-                    0 -> { tab.text = "Followers" }
+                    0 -> {
+                        tab.text = "Followers"
+                    }
 
-                    1 -> { tab.text = "Following" }
+                    1 -> {
+                        tab.text = "Following"
+                    }
                 }
 
             }.attach()
