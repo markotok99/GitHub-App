@@ -28,7 +28,7 @@ Pull requests disambut dengan hangat.
 ## Cara support saya ?
 > Hanya Follow Github dan **star** repo ini
 
-<a href="https://github.com/markotok99" target="blank">![GitHub followers](https://img.shields.io/github/followers/markotok99?style=social)</a>
+<a href="https://github.com/sinyotok" target="blank">![GitHub followers](https://img.shields.io/github/followers/sinyotok?style=social)</a>
 
 ## Note :
 
